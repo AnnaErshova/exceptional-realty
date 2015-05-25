@@ -33,6 +33,31 @@
 
 	<!-- Contact Form-->
 
+	<form action="#" method="post">
+		<!-- "post" posts this information up to the server -->
+
+		<label for="fullname">Name</label>
+			<!-- since the 'for' attribute points to the input with id 'fullname', it will have the cursor jump into an appropriate window-->
+		<input type="text" id="fullname" name="fullname" placeholder="your name" required>
+			<!-- placeholder text will disappear when we start typing in that window, but it will re-appear if we delete eveything from that window-->
+
+		<label for="email">Email</Label>
+			<!--input validates at email and will bring up @ on certain devices that support it-->
+		<input type="email" id="email" name="email" placeholder="your email" required>
+
+		<label type="tel">Phone</label>
+		<input for="phone" id="phone" name="phone" placeholder="your phone (optional)">
+			<!-- for mobile devices, "tel" will bring up the numeric keyboard vs. alphabetical one-->
+			<!-- this field is not required -->
+
+		<label for="message">Message</label>
+		<textarea id="message" name="message" rows="10"></textarea>
+		
+		<input type="submit" value="send">
+			<!-- if we click 'send' button without filling out any of these fields, we get the 'please fill out these fields' message on the fields that we have set to be required -->
+
+	</form>
+
 </body>
 
 </html>
